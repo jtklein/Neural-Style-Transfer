@@ -18,6 +18,11 @@ from keras import backend as K
 from keras.utils.data_utils import get_file
 from keras.utils.layer_utils import convert_all_kernels_in_model
 
+import tensorflow as tf
+
+tf.compat.v1.disable_eager_execution()
+
+
 """
 Neural Style Transfer with Keras 2.0.5
 
