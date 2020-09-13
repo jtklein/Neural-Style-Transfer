@@ -3,6 +3,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_probability as tfp
 
+tf.compat.v1.disable_eager_execution()
 
 # Ported from https://pychao.com/2019/11/02/optimize-tensorflow-keras-models-with-l-bfgs-from-tensorflow-probability/
 class AbstractTFPOptimizer(ABC):

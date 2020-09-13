@@ -21,6 +21,8 @@ from tensorflow.keras.utils import convert_all_kernels_in_model
 
 from tf_bfgs import LBFGSOptimizer
 
+tf.compat.v1.disable_eager_execution()
+
 """
 Neural Style Transfer with Keras 2.0.5
 
